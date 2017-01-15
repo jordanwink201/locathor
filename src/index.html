@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+    <title>Locathor Demo</title>
+
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="../node_modules/bootstrap/dist/css/bootstrap.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+
+<div class="container">
+
+    <div class="row">
+        <div class="col-xs-12">
+            <h6>Auto-fill address with current location?</h6>
+            <a href="" id="enable_detector">
+                <span class="glyphicon glyphicon-screenshot" aria-hidden="true"></span>
+            </a>
+        </div>
+    </div>
+
+    <div class="row">
+        <form class="col-sm-12" id="webform">
+            <div>
+                <label>Country</label>
+                <select id="address-country" class="form-control">
+                    <option value="USA">USA</option>
+                    <option value="AU">AU</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="first_name">First Name</label>
+                <input class="form-control" id="first_name" type="text">
+            </div>
+            <div class="form-group">
+                <label for="last_name">Last Name</label>
+                <input class="form-control" id="last_name" type="text">
+            </div>
+            <div class="form-group">
+                <label for="shipping-addressLine1">Address</label>
+                <input class="form-control" id="shipping-addressLine1" type="text">
+            </div>
+            <div class="form-group">
+                <label for="address_detail">Address 2</label>
+                <input class="form-control" id="address_detail" type="text">
+            </div>
+            <div class="form-group">
+                <label for="shipping-city">City</label>
+                <input class="form-control" id="shipping-city" type="text">
+            </div>
+            <div class="form-group">
+                <label for="address-province">State</label>
+                <select id="address-province" class="form-control">
+                    <option value="VC">VC</option>
+                    <option value="NSW">NSW</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="shipping-postCode">Zipcode</label>
+                <input class="form-control" id="shipping-postCode" type="text">
+            </div>
+        </form>
+    </div>
+
+</div>
+
+<!--  Scripts-->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDIMGOIoCyjbGL2CdfNpX-1HH1qMgrppB4"></script>
+<script src="js/generated-js.js"></script>
+
+</body>
+</html>
